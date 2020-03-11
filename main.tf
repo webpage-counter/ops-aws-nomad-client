@@ -22,10 +22,6 @@ module "dc1" {
   db_pass       = var.db_pass
 }
 
-output "dnsname" {
-  value = module.dc1.lb
-}
-
 output "ami" {
   value = module.dc1.ami
 }
