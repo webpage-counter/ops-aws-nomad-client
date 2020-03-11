@@ -21,6 +21,10 @@ module "dc1" {
   token         = var.token
   db_pass       = var.db_pass
 }
+  
+output "APP" {
+  value = module.dc1.lb2
+}
 
 output "ami" {
   value = module.dc1.ami
